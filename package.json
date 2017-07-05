@@ -1,0 +1,55 @@
+{
+  "name": "lzddemo",
+  "version": "1.0.0",
+  "description": "Lazada demo",
+  "main": "webpack.config.js",
+  "scripts": {
+    "compress": "node_modules/.bin/webpack -p --watch --color --progress",
+    "start": "node_modules/.bin/babel-node --presets react,es2015 src/server.js",
+    "dev": "node_modules/.bin/nodemon --exec npm run start",
+    "test": "mocha --compilers js:babel-core/register --require ignore-styles ./test/setup.js ./src/**/*test.js"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "cheerio": "^1.0.0-rc.1",
+    "ejs": "^2.5.6",
+    "express": "^4.14.1",
+    "lodash": "^4.17.4",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.5.10",
+    "react": "^15.3.2",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-dom": "^15.3.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.5.0",
+    "babel-preset-stage-2": "^6.11.0",
+    "chai": "^4.0.2",
+    "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
+    "http-server": "^0.9.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^9.12.0",
+    "mocha": "^3.4.2",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "react-addons-test-utils": "^15.6.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": ""
+}

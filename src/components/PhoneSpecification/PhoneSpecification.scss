@@ -1,0 +1,11 @@
+.wrapper-phone-spec {
+    table tr {
+        td:first-child {
+            font-weight: bold;
+        }
+
+        td:last-child {
+            padding-left: 10px;
+        }
+    }
+}
